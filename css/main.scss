@@ -2,7 +2,20 @@
 
 $rojo:    #ec1b24;
 $black2:  #222222;
+$black6:  #666666;
 
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
 
 header{
   background: black;
@@ -42,14 +55,14 @@ header{
   h1{
     color: $rojo;
     font-family: 'Open Sans', sans-serif;
-    font-size: 23px;
+    font-size: em(23);
     font-weight: 600;
     text-transform: uppercase;
   }
   h2{
     color: $black2;
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size: em(30);
     font-weight: 400;
     line-height: 150%;
     text-transform: uppercase;
@@ -57,8 +70,113 @@ header{
   p{
     color: $black2;
     font-family: 'Open Sans', sans-serif;
-    font-size: 21px;
+    font-size: em(21);
     font-weight: 300;
     line-height: 130%;
+  }
+  .left-side{
+    padding-top: 5%;
+  }
+}
+.carousel-control {
+  display: none;
+}
+.carousel-indicators {
+  bottom: -20px;
+  li{
+    background: $black6;
+    height: 8px;
+    width: 80px;
+  }
+  .active{
+    background: $black2;
+    height: 8px;
+    width: 80px;
+  }
+}
+
+.line-darkform{
+  background: $black2;
+  display: inline-block;
+  font-size: em(18);
+  margin: 30px 0;
+  padding: 2px 15px;
+  label{
+    color: white;
+    font-weight: 400;
+    margin: 0 15px 0 0;
+  }
+  input{    
+    height: 26px;
+  }
+  button{
+    color: white;
+    cursor: pointer;
+    font-size: 34px;
+    margin: 0 0 0 15px;
+    padding: 0;
+    line-height: 100%;
+    i{
+      vertical-align: top;
+    }
+    &:hover,
+    &:focus,
+    &:active{
+      color: $rojo;
+      outline: none;
+    }
+  }
+}
+.masonry-grid {
+  column-count: 3;
+  column-gap: .5em;
+  max-height: 400px;
+  .item {  
+    display: inline-block;
+    margin: 0 0 .5em;
+    width: 100%;
+  }
+}
+.carousel-grid1{
+  position: relative;
+  img:first-child{
+    margin-top: 10%;
+  }
+  img:nth-child(2n){
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .app-store{
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+  }
+  .play-store{
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+  }
+}
+.carousel-grid2{
+  position: relative;
+  min-height: 400px;
+  img:first-child{
+    margin-top: 3%;
+  }
+  img:nth-child(2n){
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .app-store{
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
+  .play-store{
+    position: absolute;
+    right: 0;
+    top: 120px;
   }
 }
