@@ -16,17 +16,14 @@
       <div class="container-fluid">          
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <i class="fa fa-bars fa-lg"></i>
           </button>
           <a class="navbar-brand logo-drivertech" href="#"></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Drivetech</a></li>
+            <li><a href="#" class="active">Drivetech</a></li>
             <li><a href="#">Contacto</a></li>
             <li><a href="#">Login</a></li>
           </ul>
@@ -48,10 +45,11 @@
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
+        
         <div class="item active">
-          <div class="col-md-5 left-side">
+          <div class="col-xs-12 col-sm-6 col-md-5 left-side">
             <h1>CON DRIVETECH APP</h1>
-            <h2>MONITOREA Y CONTROLA </br>
+            <h2>MONITOREA Y CONTROLA 
             TU AUTO EN TODO MOMENTO</h2>
             <p>Conoce en tiempo real ubicación, excesos de velocidad, multas impagas, revisión técnica, servicios cercanos y mucho más!</p>
 
@@ -66,7 +64,7 @@
             </form>
           </div>
 
-          <div class="col-md-7 right-side masonry-grid">
+          <div class="hidden-xs col-sm-6 col-md-7 right-side masonry-grid">
             <div class="item">
               <img src="images/img-slider-1.jpg" class="img-responsive" alt="">              
             </div>
@@ -83,14 +81,22 @@
               <img src="images/img-slider-5.jpg" class="img-responsive" alt="">              
             </div>
           </div>
+          <div class="col-xs-12 visible-xs text-center">
+            <a href="#" class="btn-store app-store">
+              <img src="images/button-appstore.png" alt="App Store">
+            </a>
+            <a href="#" class="btn-store play-store">
+              <img src="images/button-playstore.png" alt="Play Store">
+            </a>            
+          </div>
         </div><!-- item -->
 
         <div class="item">
-          <div class="col-md-5 left-side">
-            <h1>2 CON DRIVETECH APP</h1>
-            <h2>MONITOREA Y CONTROLA </br>
-            TU AUTO EN TODO MOMENTO</h2>
-            <p>Conoce en tiempo real ubicación, excesos de velocidad, multas impagas, revisión técnica, servicios cercanos y mucho más!</p>
+          <div class="col-xs-12 col-sm-6 col-md-5 left-side">
+            <h1>CON DRIVETECH APP</h1>
+            <h2>LA SEGURIDAD DE TU AUTO 
+            ESTA A UN CLICK DE DISTANCIA</h2>
+            <p>Alertas a tu teléfono en caso de que te abran una puerta o prendan tu auto.</p>
             
             <form action="" class="form-inline">
               <fieldset class="line-darkform panel">
@@ -103,9 +109,9 @@
             </form>
           </div>
 
-          <div class="col-md-7 right-side carousel-grid1">
-            <img src="images/img-slider-6.jpg" class="img-responsive" alt="">
-            <img src="images/img-slider-7.jpg" class="img-responsive" alt="">
+          <div class="col-xs-12 col-sm-6 col-md-7 right-side carousel-grid1">
+            <img src="images/img-slider-6.jpg" class="img-responsive hidden-xs" alt="">
+            <img src="images/img-slider-7.jpg" class="img-responsive hidden-xs" alt="">
             <a href="#" class="btn-store app-store">
               <img src="images/button-appstore.png" alt="App Store">
             </a>
@@ -116,11 +122,11 @@
         </div><!-- item -->
         
         <div class="item">
-          <div class="col-md-5 left-side">
-            <h1>2 CON DRIVETECH APP</h1>
-            <h2>MONITOREA Y CONTROLA </br>
-            TU AUTO EN TODO MOMENTO</h2>
-            <p>Conoce en tiempo real ubicación, excesos de velocidad, multas impagas, revisión técnica, servicios cercanos y mucho más!</p>
+          <div class="col-xs-12 col-sm-6 col-md-5 left-side">
+            <h1>CON DRIVETECH APP</h1>
+            <h2>LA SEGURIDAD DE TU AUTO 
+            ESTA A UN CLICK DE DISTANCIA</h2>
+            <p>Inmoviliza tu auto con sólo un click desde tu celular o computador. No dejes que te roben el auto!</p>
             
             <form action="" class="form-inline">
               <fieldset class="line-darkform panel">
@@ -133,9 +139,9 @@
             </form>
           </div>
 
-          <div class="col-md-7 right-side carousel-grid2">
-            <img src="images/img-slider-8.jpg" class="img-responsive" alt="">
-            <img src="images/img-slider-9.jpg" class="img-responsive" alt="">
+          <div class="col-xs-12 col-sm-6 col-md-7 right-side carousel-grid2">
+            <img src="images/img-slider-8.jpg" class="img-responsive hidden-xs" alt="">
+            <img src="images/img-slider-9.jpg" class="img-responsive hidden-xs" alt="">
             <a href="#" class="btn-store app-store">
               <img src="images/button-appstore.png" alt="App Store">
             </a>
@@ -159,10 +165,141 @@
     </div>
 
   </div><!-- container -->
-</section>  
+</section>  <!-- top carousel -->
+
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <h3 class="red-title">
+          <i class="icon-red icon-clock"></i>
+          <span>MONITOREA <br>
+          EN TIEMPO REAL</h3></span>
+        </h3>
+        <ul>
+          <li>
+            Estado del vehículo
+              <ul>
+                <li>Prendido / Apagado</li>
+                <li>Puertas Abiertas / Cerradas</li>
+              </ul>
+          </li>
+          <li>Ubicación
+              <ul>
+                <li>Velocidad</li>
+                <li>Dirección exacta</li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <h3 class="red-title">
+          <i class="icon-red icon-hand"></i>
+          <span>CONTROLA CON <br>
+          UN SOLO CLICK</span>
+        </h3>
+        <ol>
+          <li><strong>Inmoviliza</strong> tu vehículo en cualquier momento</li>
+          <li><strong>Activa sirena</strong> del vehículo para alertar de manera disuasiva</li>
+          <li><strong>Configura</strong> velocidad máxima</li>
+        </ol>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <h3 class="red-title">
+          <i class="icon-red icon-info"></i>
+          <span>INFORMATE <br>
+          FACILMENTE DE</span>
+        </h3>
+        <ol>
+          <li>Kilometraje de tu auto, multas impagas, próxima revisión técnica y mantención.</li>
+          <li>Servicios cerca: comisarías, estacionamientos, grúas, PRT, hospitales y gasolineras.</li>
+        </ol>
+      </div>
+    </div>
+  </div> <!-- container -->
+</section> <!-- features -->
+
+<section id="clients">
+  <div class="container">
+    <div class="row clients-around">
+      <div class="col-xs-12 text-center">
+        <img src="images/cliente-1.jpg" alt="">
+        <img src="images/cliente-2.jpg" alt="">
+        <img src="images/cliente-3.jpg" alt="">
+        <img src="images/cliente-4.jpg" alt="">
+        <img src="images/cliente-5.jpg" alt="">
+        <img src="images/cliente-6.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 
 
+<section id="testimonials">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center">EXPERIENCIAS CON DRIVTECH APP</h2>
+      
+      <div class="col-xs-12 col-sm-4 center-justified">
+        <h3 class="red-title">
+          <div class="block">
+            <i class="fa fa-user-circle-o"></i>
+          </div>
+          Juan Pérez Baen
+        </h3>
+        <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic expedita, ipsa ipsam quisquam sequi corrupti recusandae asperiores, magnam doloremque?</i></p>
+      </div>
+      
+      <div class="col-xs-12 col-sm-4 center-justified">
+        <h3 class="red-title">
+          <div class="block">
+            <i class="fa fa-user-circle-o"></i>
+          </div>
+          Juan Pérez Baen
+        </h3>
+        <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic expedita, ipsa ipsam quisquam sequi corrupti recusandae asperiores, magnam doloremque?</i></p>
+      </div>
+      
+      <div class="col-xs-12 col-sm-4 center-justified">
+        <h3 class="red-title">
+          <div class="block">
+            <i class="fa fa-user-circle-o"></i>
+          </div>
+          Juan Pérez Baen
+        </h3>
+        <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic expedita, ipsa ipsam quisquam sequi corrupti recusandae asperiores, magnam doloremque?</i></p>
+      </div>
 
+    </div>
+  </div> <!-- container -->
+</section> <!-- testimonials -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 text-center pt-30 pt-xs-0">
+        &copy; Drivetech 2013-2016
+      </div>
+      <div class="col-xs-12 col-sm-4 text-center pt-30">
+        <div class="col-xs-4 text-right">
+          <a href=""><i class="fa fa-facebook fa-2x"></i></a>
+        </div>
+        <div class="col-xs-4 text-center">
+          <a href=""><i class="fa fa-twitter fa-2x"></i></a>
+        </div>
+        <div class="col-xs-4 text-left">
+          <a href=""><i class="fa fa-tumblr fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 text-xs-center pt-xs-30">
+        <a href="mailto:contacto@drivetech.pro">contacto@drivetech.pro</a> <br>
+        Av. La Dehesa, Lo Barnechea, Stgo., Chile
+        Oficina 521 <br>
+        +56 2 2755692
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
