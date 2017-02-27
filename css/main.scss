@@ -13,7 +13,7 @@ $browser-context: 16; // Default
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
 }
-@media (min-width: 768px){
+@media (max-width: 768px){
   .container {
     width: 100%;
   }
@@ -24,6 +24,13 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+h1{
+  font-size: em(35);
+  font-weight: 300;
+  @media(max-width: 768px){
+    font-size: em(25);
+  }
 }
 h2{
   font-size: em(34);
@@ -102,6 +109,12 @@ header{
   margin: 5px 0;
 }
 
+.gray-back{
+  background: $gris-claro;
+  box-shadow: 0px 2px 20px rgba(0,0,0, 0.3);
+  margin: 30px 0;
+  padding: 20px 0;
+}
 .carousel{
   padding: 15px 0;
   h1{
@@ -345,9 +358,6 @@ header{
 }
 
 #features{
-  background: $gris-claro;
-  box-shadow: 0px 2px 20px rgba(0,0,0, 0.3);
-  margin: 30px 0;
   padding: 20px 0;
   ul,
   ol{
@@ -373,16 +383,16 @@ header{
       }
     }
   }
-  ol{
-    counter-reset:item;
-    li{
-      font-weight: 400;
-      counter-increment:item;
-      &:before{
-        content: counter(item) " \2022";
-        font-weight: 600;
-        margin-right: .3em;
-      }
+}
+ol{
+  counter-reset:item;
+  li{
+    font-weight: 400;
+    counter-increment:item;
+    &:before{
+      content: counter(item) " \2022";
+      font-weight: 600;
+      margin-right: .3em;
     }
   }
 }
@@ -436,10 +446,7 @@ h3.red-title{
 #clients{
   padding: 20px 0;
 }
-#testimonials{
-  background: $gris-claro;
-  box-shadow: 0px 2px 20px rgba(0,0,0, 0.3);
-  margin: 30px 0;
+#testimonials{  
   padding: 20px 0 50px;
   .red-title i{
     font-size: 40px;
@@ -458,6 +465,42 @@ h3.red-title{
     }
   }
 }
+#recovery{
+  min-height: 25vw;
+}
+#faq{
+  ul,ol{
+    padding: 0;
+    li{
+      color: black;
+      list-style: none;
+      font-size: em(18);
+      font-weight: 600;
+      margin-bottom: 5px;
+      a{
+        color: black;
+        &.collapsed{
+          font-weight: 300;
+        }
+        &:focus,
+        &:hover{
+          text-decoration: none;
+        }
+      }
+      @media(max-width: 768px){
+        font-size: em(16);
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .well{
+    background: white;
+    font-weight: 300;
+    margin: 10px auto 25px;
+    padding: 10px 20px;
+    width: 95%;
+  }
+}
 
 footer{
   background: $black3;
@@ -467,7 +510,7 @@ footer{
   a{
     color: white;
     &:hover{
-      color: $rojo;
+      color: darken($rojo, 15%);
     }
   }
   // [class*="col-"]{
@@ -487,6 +530,9 @@ footer{
 }
 .pt-30{
   padding-top: 30px;
+}
+.pt-50{
+  padding-top: 50px;
 }
 .pt-xs-0{
   @media(max-width: 768px){
